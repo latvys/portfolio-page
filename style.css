@@ -6,6 +6,7 @@ body {
 /*navbar*/
 
 .navbar {
+    position: fixed;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -35,7 +36,7 @@ body {
 /*home*/
 
 .home {
-    min-height: 45em;
+    min-height: 50em;
     background-image: url('images/home-background.jpg');
     background-position-x: center;
     background-size: cover;
@@ -87,4 +88,97 @@ body {
     .about__text {
         margin: 15px 0 45px 0;
     }
+}
+
+
+/*portfolio*/
+
+.portfolio {
+    /*height: 500px;*/
+    background-image: url('http://wallpapercave.com/wp/dllTcep.jpg');
+    background-size: cover;
+}
+
+.portfolio__gallery {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.portfolio__my {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    color: #8fc1f4;
+}
+
+.portfolio__item {
+    height: 250px;
+    background-color: black;
+    border: solid 2px black;
+    transition: all 0.25s ease-in-out;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.portfolio__item:hover {
+    border: solid 2px #8fc1f4;
+}
+
+.portfolio__picture {
+    width: 100%;
+    height: 100%;
+    background-image: url('http://il6.picdn.net/shutterstock/videos/12713180/thumb/1.jpg');
+    background-size: cover;
+}
+
+.portfolio__description__bg {
+    position: absolute;
+    top: 30%;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.portfolio__description {
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/*contacts*/
+
+.contacts {
+    background-color: black;
+}
+
+.contacts .row {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.contacts__email {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 3em;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #8fc1f4;
+}
+
+.contacts__item {
+    padding-top: 10px;
+}
+
+.contacts .btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.contacts .btn a {
+    color: white;
+    text-decoration: none;
 }
